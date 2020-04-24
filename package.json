@@ -1,7 +1,7 @@
 {
   "name": "design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -19,6 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
+    "build-pkg": "cross-env BABEL_ENV=production babel src -d dist",
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "storybook-to-ghpages"
   },
@@ -37,7 +38,13 @@
       "last 1 safari version"
     ]
   },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@storybook/addon-a11y": "^5.3.18",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-docs": "^5.3.18",
@@ -48,6 +55,23 @@
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
     "@storybook/storybook-deployer": "^2.8.5",
+    "auto": "^9.30.1",
+    "cross-env": "^7.0.2",
     "prettier": "^2.0.5"
-  }
+  },
+  "description": "The Learn Storybook design system is a subset of the full [Storybook design system](https://github.com/storybookjs/design-system/), created as a learning resource for those interested in learning how to write and publish a design system using best in practice techniques.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerferrin/design-system.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Tyler Ferrin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tylerferrin/design-system/issues"
+  },
+  "homepage": "https://github.com/tylerferrin/design-system"
 }

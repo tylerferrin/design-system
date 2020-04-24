@@ -1,14 +1,6 @@
-# v2.5.1 (Thu Apr 23 2020)
+# v0.1.0 (Tue Sep 03 2019)
 
-#### ⚠️  Pushed to `master`
-
-- add accessibility addon (tyler.ferrin@hingehealth.com)
-- add spec for Link (tyler.ferrin@hingehealth.com)
-- add docs folder (tyler.ferrin@hingehealth.com)
-- broke out button styles into separate File (tyler.ferrin@hingehealth.com)
-- fix config.yml install (tyler.ferrin@hingehealth.com)
-- add components and circleci config (tyler.ferrin@hingehealth.com)
-- Initialize project using Create React App (tyler.ferrin@hingehealth.com)
+- Created first version of the design system, with `Avatar`, `Badge`, `Button`, `Icon` and `Link` components.
 
 #### Authors: 1
 
